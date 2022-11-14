@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="signup.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="image">
+        <h1> TDCC Allocation</h1>
+        <img src="images/Seminar-amico.svg">
+    </div>
+    <div class="box">
+        
+        <div class="form">
+            <h2>Sign Up</h2>
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Name</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Email id</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <!-- <label for ="School"  required="required"><span>School</span></label> -->
+                <input list="School" name="School" required="required">
+                <span>School</span>
+                    <datalist id="School" value="School">
+                        <option value="SET">School of Engineering And Technology</option>
+                        <option value="SOL">School Of Law</option>
+                        <option value="SOD">School Of Design</option>
+                        <option value="SHS">School of Health Science</option>
+                        <option value="VATEL">Vatel Hotel and Tourism Business School</option>
+                        <option value="SAA">School Of Arts and Architecture</option>
+                        <option value="SOP">School Of Planning and Development</option>
+                        <option value="SOB">School Of Business</option>
+                    </datalist>
+                <!-- <span>School</span> -->
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Course Name</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" required="required">
+                <span>New Password</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" required="required">
+                <span>Confirm Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href ="#">Forgot Password</a>
+                <a href="signin.html">Already have Account</a>
+            </div>
+            <a href="Home.html"><input type="submit" value="Create a account"></a>
+        </div>
+    </div>
+</body>
+</html>

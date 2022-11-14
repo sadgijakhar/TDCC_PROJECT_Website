@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Application Form</title>
+</head>
+<body>
+    <div class="box">
+        
+        <div class="form">
+            <div class ></div><h2>Choose Your Subject</h2>
+            <div class="inputbox1">
+                <span>Name</span><br>
+                <input type="text" required="required">
+                <i></i>
+            </div>
+            <div class="inputbox2">
+                <span>Email id</span><br>
+                <input type="text" required="required">
+                <i></i>
+            </div>
+            <div class="inputbox3">
+                <!-- <label for ="School"  required="required"><span>School</span></label> -->
+                <!-- <input list="School" name="School" required="required"> -->
+                <span>School</span><br>
+                    <select id="School" value="School" onchange="populate(this.id , 'Course')">
+                        <option value = ""></option></option>
+                        <option value="SET">School of Engineering And Technology</option>
+                        <option value="SOL">School Of Law</option>
+                        <option value="SOD">School Of Design</option>
+                        <option value="SHS">School of Health Science</option>
+                        <option value="VATEL">Vatel Hotel and Tourism Business School</option>
+                        <option value="SAA">School Of Arts and Architecture</option>
+                        <option value="SOP">School Of Planning and Development</option>
+                        <option value="SOB">School Of Business</option>
+                    </select>
+                <!-- <span>School</span> -->
+                <i></i>
+            </div>
+            <div class="inputbox4">
+                <!-- <input type="text" required="required"> -->
+                <span>Course Name</span><br>
+                <i></i>
+                <select id="Course" value="Course"></select>
+            </div>
+            
+        </div>
+        <script type = "text/javascript">
+            function populate(s1,s2){
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);
+                s2.innerHTML = "";
+                if(s1.value == "SET"){
+                    var optionArray = ["|", "a|Development of Public Place through People's Participation","b|Kinetic Design","c|Workplace safety, food safety and fundamental skills in the kitchen","d|Basics of Fashion" ,"e|Social Media Marketing","f|Basics of SPSS Software","g|Fundamentals of Health Law","h|Sensitisation of Youth on social Issues","i|Primary Eye Care & Ocular Emergencies","j|Concept of Health Education"];
+                }
+                else if(s1.value == "SOL"){
+                    var optionArray = ["|","a|Development of Public Place through People's Participation","b|Kinetic Design","c|Workplace safety, food safety and fundamental skills in the kitchen","d|MSME Production Skillset" , "e|Emerging Technology : Automation in Industry","f|Basics of Fashion","g|Social Media Marketing","h|Basics Of SPSS Software","i|Primary Eye Care & Ocular Emergencies","j|Concept of Health Education"];
+                }
+                else if(s1.value == "SOD"){
+                    var optionArray = ["|","a|Development of Public Place through People's Participation","b|Kinetic Design","c|Workplace safety, food safety and fundamental skills in the kitchen","d|MSME Production Skillset" , "e|Emerging Technology : Automation in Industry","f|Social Media Marketing","g|Basics of SPSS Software","h|Fundamentals of Health Law","i|Sensitisation of Youth on social Issues","j|Primary Eye Care & Ocular Emergencies","k|Concept of Health Education"];
+                }
+                else if(s1.value == "SHS"){
+                    var optionArray = ["|","a|Development of Public Place through People's Participation","b|Kinetic Design","c|Workplace safety, food safety and fundamental skills in the kitchen","d|MSME Production Skillset" , "e|Emerging Technology : Automation in Industry","f|Basics of Fashion","g|Social Media Marketing","h|Basics Of SPSS Software","i|Fundamentals of Health Law" , "j|Sensitisation of Youth on social Issues"];
+                }
+                else if(s1.value == "VATAEL"){
+                    var optionArray = ["|","a|Development of Public Place through People's Participation","b|Kinetic Design","c|MSME Production Skillset" , "d|Emerging Technology : Automation in Industry","e|Basics of Fashion","f|Social Media Marketing","g|Basics Of SPSS Software","h|Fundamentals of Health Law" , "i|Sensitisation of Youth on social Issues","j|Primary Eye Care & Ocular Emergencies","k|Concept of Health Education"];
+                }
+                else if(s1.value == "SAA"){
+                    var optionArray = ["|","a|Development of Public Place through People's Participation","b| Workplace safety, food safety and fundamental skills in the kitchen","c|MSME Production Skillset" , "d|Emerging Technology : Automation in Industry","e|Basics of Fashion","f|Social Media Marketing","g|Basics Of SPSS Software","h|Fundamentals of Health Law" , "i|Sensitisation of Youth on social Issues","j|Primary Eye Care & Ocular Emergencies","k|Concept of Health Education"];
+                }
+                else if(s1.value == "SOP"){
+                    var optionArray = ["|","a|Kinetic Design","b| Workplace safety, food safety and fundamental skills in the kitchen","c|MSME Production Skillset" , "d|Emerging Technology : Automation in Industry","e|Basics of Fashion","f|Social Media Marketing","g|Basics Of SPSS Software","h|Fundamentals of Health Law" , "i|Sensitisation of Youth on social Issues","j|Primary Eye Care & Ocular Emergencies","k|Concept of Health Education"];
+                }
+                else if(s1.value == "SOB"){
+                    var optionArray = ["|","a|Development of Public Place through People's Participation","b|Kinetic Design","c| Workplace safety, food safety and fundamental skills in the kitchen","d|MSME Production Skillset" , "e|Emerging Technology : Automation in Industry","f|Basics of Fashion","g|Fundamentals of Health Law" , "h|Sensitisation of Youth on social Issues","i|Primary Eye Care & Ocular Emergencies","j|Concept of Health Education"];
+                }
+                for(var option in optionArray){
+                    var pair = optionArray[option].split("|");
+                    var newOption = document.createElement("option");
+                    newOption.value = pair[0];
+                    newOption.innerHTML = pair[1];
+                    s2.options.add(newOption);
+                }
+            }
+        </script>
+</body>
+</html>
