@@ -69,6 +69,42 @@ header nav{
     margin-left:10px;
     color: black;
 }
+.button-62 {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-right:35px;
+    
+  }
+  
+  .button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .button-62:not([disabled]):hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  }
+  .button-62:hover{
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);;
+  }
+
+
 /* -------------------------------Main------------------------------- */
 #Main{
     width:100%;
@@ -105,6 +141,15 @@ header nav{
     padding: 20px;
 }
 /* -------------------------------Sub1------------------------------- */
+/* section{
+    scroll-snap-align: start;
+    height:100vh;
+}
+.check{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height:100vh;
+} */
 #Sub1{
     width:90%;
     /* height:20%; */
@@ -364,12 +409,15 @@ header nav{
     text-align: center;
 }
 .anchor a{
-    background-color: chocolate;
+    background-color: rgb(159, 30, 210);
     padding:10px;
-    color: black;
+    color: rgb(248, 246, 246);
     text-decoration: none;
     font-size: 30px;
     font-weight: 400;
+}
+.anchor a:hover{
+    background-color: rgb(230, 20, 111);
 }
 /* -----------------------Footer-------------------------- */
 footer{

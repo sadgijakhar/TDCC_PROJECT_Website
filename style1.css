@@ -1,3 +1,6 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 *{
     font-family: 'Open Sans', sans-serif;
@@ -72,6 +75,41 @@ header nav{
     -webkit-text-fill-color: transparent; */
 
 }
+.button-62 {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-right:35px;
+    
+  }
+  
+  .button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .button-62:not([disabled]):hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  }
+  .button-62:hover{
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);;
+  }
+
 /*----------------------Showcase-------------------------*/
 #showCase{
     display: flex;
@@ -155,13 +193,19 @@ header nav{
     border-color: black;
     border-style: solid ;
     transition:0.5s;
-    background: -webkit-linear-gradient(-45deg,#f5efef , #948790,#505864 ,#2b384a);
+    background: #52c234;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .box1:hover, .box2:hover , .box3:hover, .box4:hover ,.box5:hover ,.box6:hover,.box7:hover, .box8:hover , .box9:hover, .box10:hover ,.box11:hover ,.box12:hover{
     width:450px;
     height:550px;
     box-shadow: #e40bdd 3px;
-    background:transparent;
+    background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     /* background: -webkit-linear-gradient(-45deg,#f64444 , #79215f,#5d81b6 ,#2470da); */
 }
 ul li.box1{
@@ -268,38 +312,39 @@ ul li.box12{
 }
 
 .content h2{
-    font-family: 'Pacifico', cursive;
+    font-family:'Roboto', sans-serif;
     font-size: 35px;
     text-align: center;
-    color: black;
+    color: rgb(248, 242, 242);
     text-decoration: none;
 }
 .content p{
     text-align: left;
     padding-left: 20px;
     font-size: 20px;
+    color: #fff;
 }
 .box2 .content h2 ,.box4 .content h2 ,.box5 .content h2 ,.box10 .content h2,.box7 .content h2, .box12 .content h2,.box8 .content h2,.box9 .content h2{
-    font-family: 'Pacifico', cursive;
+    font-family:'Roboto', sans-serif;
     font-size: 35px;
     text-align: center;
-    color: black;
+    color: rgb(242, 237, 237);
     text-decoration: none;
     padding-top: 8%;
 }
 .box6 .content h2 {
-    font-family: 'Pacifico', cursive;
+    font-family:'Roboto', sans-serif;
     font-size: 35px;
     text-align: center;
-    color: black;
+    color: rgb(241, 237, 237);
     text-decoration: none;
     padding-top: 5%;
 }
 .box11 .content h2 {
-    font-family: 'Pacifico', cursive;
+    font-family:'Roboto', sans-serif;
     font-size: 32px;
     text-align: center;
-    color: black;
+    color: rgb(250, 243, 243);
     text-decoration: none;
     padding-top: -30%;
 }
