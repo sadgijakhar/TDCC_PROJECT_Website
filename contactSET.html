@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class = "container1">
+            <div id = "branding">
+                <img src="images/logo.png">
+            </div>
+            <nav>
+                <ul>
+                    <!-- <li><a href="Home1.html">Home</a></li> -->
+                    <li><a href = "courseSet.html">Course for you</a></li>
+                    <li><a href = "contactSET.html" >Contact</a></li>
+                    <button class="button-62" role="button" onClick="myFunction()">signout</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id = "showCase">
+        <div class="box">
+            <h6>Contact Us</h6>
+            <h1>SET CONTACT CENTER FOR TDCC</h1>
+
+            <p>Room No.: D-305, D-Block, Sushant University</p>
+            <p>Mon – Fri: 9:00 am – 4:00 pm</p>
+            <a href="rajanbansal@sushantuniversity.edu.in">rajanbansal</a>
+            <p class="footer">©2022 Privacy policy</p>
+        </div>
+        <div class="box1">
+            <form action="https://formspree.io/f/xvoyjjyk" method="POST" runat="server">
+                <div class="name">
+                    <input name ="name" id= "text1" type="text" placeholder="Enter Your Name" required>
+                </div>
+                <input type="email" id= "text2" name="email" placeholder="Enter a valid Email Address" required>
+                <textarea name="message" id= "text3" placeholder="Enter Your Query"></textarea>
+                <button class = "button_1" type = "submit" onclick="clear()"/> Send</button>
+            </form>
+        </div>
+        <script>
+            function clear(){
+                document.getElementById("text1").value = null;
+                document.getElementById("text2").value = null;
+                document.getElementById("text3").value = null;
+            }
+            function myFunction() {
+                window.location.href="signin.html";
+            }
+            
+        </script>
+    </section> 
+
+</body>
+</html>

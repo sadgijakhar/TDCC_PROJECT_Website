@@ -26,7 +26,7 @@
                     <li ><a href = "Subject.html">Subject</a></li>
                     <li ><a href = "Teacher.html">Faculty</a></li>
 
-                    <button class="button-62" role="button" onClick="myFunction()">signin</button>
+                    <button class="button-62" role="button" onClick="myFunction()">signup</button>
 
                 </ul>
             </nav>
@@ -184,18 +184,18 @@
 
             </ul>
         </nav>
-        <form class ="quote">
+        <form class ="quote" action="https://formspree.io/f/xvoyjjyk" method="POST" >
             <div>
                 <label>Name</label><br>
-                <input type="text" placeholder="Name">
+                <input name = "name" type="text" placeholder="Name" required>
             </div>
             <div>
                 <label>Email</label><br>
-                <input type="email" placeholder="Email Address">
+                <input type="email" name= "email" placeholder="Email Address" required>
             </div>
             <div>
                 <label>Message</label><br>
-                <textarea placeholder="Message"></textarea>
+                <textarea name = "message" placeholder="Message" required></textarea>
             </div>
             <button class = "button_1" type = "submit"> Send</button>
         </form>
@@ -211,7 +211,7 @@
     </div>
     <script>
         function myFunction() {
-          window.location.href="signin.html";
+          window.location.href="signup.html";
         }
       </script>
     </body>
