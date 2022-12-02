@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <!-- <link rel="stylesheet" href="sty.css"> -->
+</head>
+
+<body>
+    
+    <!-- <h2>Choose your car</h2>
+    <hr />
+    <select id = "slct1" name = "slct1" onchange="populate(this.id , 'slct2')">
+        <option value =""></option>
+        <option value ="Chevy">Chevy</option>
+        <option value ="Dodge">Dodge</option>
+        <option value ="Ford">Ford</option>
+    </select>
+    <h2>Choose car model</h2>
+    <hr />
+    <select id = "slct2" name = "slct2">
+    <a href="www.google.com" id="camaro">google</a>
+    </select>
+    
+
+    <script type = "text/javascript">
+        function populate(s1,s2){
+            var s1 = document.getElementById(s1);
+            var s2 = document.getElementById(s2);
+            s2.innerHTML = "";
+            if(s1.value == "Chevy"){
+                var optionArray = ["camaro|camaro"];
+            }
+            else if(s1.value == "Dodge"){
+                var optionArray = ["|","look|Look" , "corvette|Corvette","impala|Impala"];
+            }
+            else if(s1.value == "Ford"){
+                var optionArray = ["|","eco|Eco" , "corvette|Corvette","impala|Impala"];
+            }
+            for(var option in optionArray){
+                var pair = optionArray[option].split("|");
+                var newOption = document.createElement("option");
+                newOption.value = pair[0];
+                newOption.innerHTML = pair[1];
+                s2.options.add(newOption);
+            }
+        }
+    </script> -->
+    <div class="inputbox">
+        <!-- <label for ="School"  required="required"><span>School</span></label> -->
+        <input list="School" name="School" id="school" required="required">
+        <span>School</span>
+            <select id="School" value="School" onclick="display();">
+                <option value="SET">School of Engineering And Technology</option>
+                <option value="SOL">School Of Law</option>
+                <option value="SOD">School Of Design</option>
+                <option value="SHS">School of Health Science</option>
+                <option value="VATEL">Vatel Hotel and Tourism Business School</option>
+                <option value="SAA">School Of Arts and Architecture</option>
+                <option value="SOP">School Of Planning and Development</option>
+                <option value="SOB">School Of Business</option>
+            </select>
+        <!-- <span>School</span> -->
+        <i></i>
+    </div>
+    <!-- <button onclick="fuctionname()">blue</button> -->
+    
+
+    <script>
+        function display(){
+            var school = document.getElementById("school").value;
+            if(school == "SET"){
+
+                document.getElementById('submit').style.display = "block";
+                document.getElementById('a').style.display ="none";
+            }
+            else if (school == "SOP"){
+                document.getElementById('submit').style.display = "none";
+                document.getElementById('a').style.display ="block";
+            }
+        }
+        
+    </script>
+    <a href="https://www.youtube.com/shorts/tS7JnC360MQ" style= " display:none; " id="submit">submit</a>
+    <a href="https://www.google.com/shorts/tS7JnC360MQ"  style = " display:none; "id="a">submit</a>
+</body>
+
+</html>

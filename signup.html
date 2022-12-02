@@ -18,20 +18,21 @@
         <div class="form">
             <h2>Sign Up</h2>
             <div class="inputbox">
-                <input type="text" required="required">
+                <input type="text" id = "name" required="required">
                 <span>Name</span>
                 <i></i>
             </div>
             <div class="inputbox">
-                <input type="text" required="required">
+                <input type="text" id = "mail" required="required">
                 <span>Email id</span>
                 <i></i>
             </div>
             <div class="inputbox">
                 <!-- <label for ="School"  required="required"><span>School</span></label> -->
-                <input list="School" name="School" required="required">
+                <input list="School" name="School" id="school" required="required">
                 <span>School</span>
-                    <datalist id="School" value="School">
+                    <select value="School">
+                        <option value="#"></option>
                         <option value="SET">School of Engineering And Technology</option>
                         <option value="SOL">School Of Law</option>
                         <option value="SOD">School Of Design</option>
@@ -40,22 +41,22 @@
                         <option value="SAA">School Of Arts and Architecture</option>
                         <option value="SOP">School Of Planning and Development</option>
                         <option value="SOB">School Of Business</option>
-                    </datalist>
+                    </select>
                 <!-- <span>School</span> -->
                 <i></i>
             </div>
             <div class="inputbox">
-                <input type="text" required="required">
+                <input type="text" id="courseName" required="required">
                 <span>Course Name</span>
                 <i></i>
             </div>
             <div class="inputbox">
-                <input type="password" required="required">
+                <input type="password" id="password" required="required">
                 <span>New Password</span>
                 <i></i>
             </div>
             <div class="inputbox">
-                <input type="password" required="required">
+                <input type="password" id="confirmpassword" required="required">
                 <span>Confirm Password</span>
                 <i></i>
             </div>
@@ -63,8 +64,40 @@
                 <a href ="#">Forgot Password</a>
                 <a href="signin.html">Already have Account</a>
             </div>
-            <a href="Home.html"><input type="submit" value="Create a account"></a>
+            <a href="Home.html" ><input type="submit" value="Create a account"></a>
         </div>
     </div>
+    <script>
+        let status = document.querySelector('a[href = "Home.html"]');
+        let select = document.querySelector('select');
+
+        select.addEventListener('change',() =>{
+            if(select.value == "SET"){
+                status.setAttribute('href','courseSET.html');
+            }
+            else if(select.value == "SOL"){
+                status.setAttribute('href','courseSOL.html');
+            }
+            else if(select.value == "SOB"){
+                status.setAttribute('href','courseSOB.html');
+            }
+            else if(select.value == "SOP"){
+                status.setAttribute('href','courseSOP.html');
+            }
+            else if(select.value == "SHS"){
+                status.setAttribute('href','courseSHS.html');
+            }
+            else if(select.value == "VATEL"){
+                status.setAttribute('href','courseVATEL.html');
+            }
+            else if(select.value == "SAA"){
+                status.setAttribute('href','courseSAA.html');
+            }
+            else if(select.value == "SOD"){
+                status.setAttribute('href','courseSOD.html');
+            }
+            
+        })
+    </script>
 </body>
 </html>

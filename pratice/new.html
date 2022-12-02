@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style = "text-align: center;">
+        <!-- <button>Trigger Change</button> -->
+        <a href = "https://imagekit.io/blog/how-to-resize-image-in-html/#:~:text=One%20of%20the%20simplest%20ways,CSS%20pixels." >Submit</a>
+        <select>
+            <option value = "james">James</option>
+            <option value = "mark">Marks</option>
+            <option value = "peter">Peter</option>
+            <option value = "alex">Alex</option>
+        </select>
+    </div>
+    <script>
+        <!-- let btn = document.querySelector('button'); -->
+        let status = document.querySelector('a[href = "https://imagekit.io/blog/how-to-resize-image-in-html/#:~:text=One%20of%20the%20simplest%20ways,CSS%20pixels."]');
+        let select = document.querySelector('select');
+
+        select.addEventListener('change',() =>{
+            if(select.value == "james"){
+                status.setAttribute('href','https://uigradients.com/#Neuromancer');
+            }
+            else if(select.value == "mark"){
+                status.setAttribute('href','https://uigradients.com/#Neuromancer');
+            }
+            
+        })
+    </script>
+</body>
+</html>
