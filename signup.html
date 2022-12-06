@@ -28,21 +28,18 @@
                 <i></i>
             </div>
             <div class="inputbox">
-                <!-- <label for ="School"  required="required"><span>School</span></label> -->
-                <input list="School" name="School" id="school" required>
-                <span>School</span>
-                    <select value="School">
-                        <option value="#"></option>
-                        <option value="SET">School of Engineering And Technology</option>
-                        <option value="SOL">School Of Law</option>
-                        <option value="SOD">School Of Design</option>
-                        <option value="SHS">School of Health Science</option>
-                        <option value="VATEL">Vatel Hotel and Tourism Business School</option>
-                        <option value="SAA">School Of Arts and Architecture</option>
-                        <option value="SOP">School Of Planning and Development</option>
-                        <option value="SOB">School Of Business</option>
-                    </select>
-                <!-- <span>School</span> -->
+                <!-- <span class="s1">School<i></i></span> -->
+                <select value="School">
+                    <option value="#"> Choose Your School</option>
+                    <option value="SET">School of Engineering And Technology</option>
+                    <option value="SOL">School Of Law</option>
+                    <option value="SOD">School Of Design</option>
+                    <option value="SHS">School of Health Science</option>
+                    <option value="VATEL">Vatel Hotel and Tourism Business School</option>
+                    <option value="SAA">School Of Arts and Architecture</option>
+                    <option value="SOP">School Of Planning and Development</option>
+                    <option value="SOB">School Of Business</option>
+                </select>    
                 <i></i>
             </div>
             <div class="inputbox">
@@ -72,7 +69,10 @@
         let select = document.querySelector('select');
 
         select.addEventListener('change',() =>{
-            if(select.value == "SET"){
+            if(select.value == "#"){
+                status.setAttribute('href','Home.html');
+            }
+            else if(select.value == "SET"){
                 status.setAttribute('href','courseSET.html');
             }
             else if(select.value == "SOL"){
